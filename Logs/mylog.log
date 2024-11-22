@@ -1,0 +1,8 @@
+[INFO ] 2024-11-22 16:31:23.217 [main] MyStore - url opened
+[INFO ] 2024-11-22 16:31:25.985 [main] MyStore - Name & email entered, clicked on signUp button!!
+[INFO ] 2024-11-22 16:31:26.071 [main] MyStore - Title selected!!
+[INFO ] 2024-11-22 16:31:26.251 [main] MyStore - password entered
+[INFO ] 2024-11-22 16:31:26.892 [main] MyStore - date of birth entered
+[INFO ] 2024-11-22 16:31:29.382 [main] MyStore - All required fields entered
+[INFO ] 2024-11-22 16:31:31.811 [main] MyStore - Clicked on create account
+[INFO ] 2024-11-22 16:31:33.746 [main] MyStore - Account Created => continuing to next page

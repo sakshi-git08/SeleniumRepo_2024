@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.MyStore.utilities.ExtentReportUsingListener"></listener>
+    </listeners>
     <test verbose="2" preserve-order="true"
           name="D:/Sakshi/CareerLearnings/SeleniumAutomation/src/test/java/com/SeleniumAutomation/testcases/TestMyAccount.java">
         <classes>
-            <class name="com.SeleniumAutomation.testcases.TestMyAccount">
-                <methods>
-                    <include name="verifyRegistrationAndLogin"/>
-                </methods>
+            <class name="com.MyStore.testcases.TestMyAccount">
+<!--                <methods>-->
+<!--                    <include name="verifyRegistrationAndLogin"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>

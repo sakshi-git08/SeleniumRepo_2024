@@ -1,4 +1,4 @@
-package com.SeleniumAutomation.pageobject;
+package com.MyStore.pageobject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,9 +10,9 @@ public class IndexPage {
     WebDriver ldriver;
 
     //constructor
-    public IndexPage(WebDriver rdriver){
+    public IndexPage(WebDriver rdriver) {
         ldriver = rdriver;
-        PageFactory.initElements(rdriver,this);
+        PageFactory.initElements(rdriver, this);
     }
 
     //identify webelements
@@ -21,7 +21,7 @@ public class IndexPage {
 
 
     //identify action on webelement
-    public void clickOnSignIn(){
+    public void clickOnSignIn() {
         signIn.click();
     }
 }

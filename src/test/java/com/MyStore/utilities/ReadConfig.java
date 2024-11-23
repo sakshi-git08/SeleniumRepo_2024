@@ -1,8 +1,6 @@
-package com.SeleniumAutomation.utilities;
+package com.MyStore.utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
 
 public class ReadConfig {
@@ -21,20 +19,20 @@ public class ReadConfig {
         }
     }
 
-    public String getBaseUrl(){
+    public String getBaseUrl() {
         String value = properties.getProperty("baseUrl");
-        if(value != null) {
+        if (value != null) {
             return value;
-        }else {
+        } else {
             throw new RuntimeException("url not specified in config file.");
         }
     }
 
-    public String getBrowser(){
+    public String getBrowser() {
         String value = properties.getProperty("browser");
-        if(value != null) {
+        if (value != null) {
             return value;
-        }else {
+        } else {
             throw new RuntimeException("url not specified in config file.");
         }
     }

@@ -1,4 +1,4 @@
-package com.SeleniumAutomation.pageobject;
+package com.MyStore.pageobject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +9,9 @@ public class HomePage {
     WebDriver ldriver;
 
     //constructor
-    public HomePage(WebDriver rdriver){
+    public HomePage(WebDriver rdriver) {
         ldriver = rdriver;
-        PageFactory.initElements(rdriver,this);
+        PageFactory.initElements(rdriver, this);
     }
 
     //identify webelements
@@ -19,7 +19,7 @@ public class HomePage {
     WebElement loggedInAs;
 
     //identify action on webelement
-    public String verifyUserLoggedIn(){
+    public String verifyUserLoggedIn() {
         String loggedInName = loggedInAs.getText();
         return loggedInName;
     }

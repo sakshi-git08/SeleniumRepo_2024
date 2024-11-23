@@ -1,4 +1,4 @@
-package com.SeleniumAutomation.pageobject;
+package com.MyStore.pageobject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +9,9 @@ public class AccountCreatedPage {
     WebDriver ldriver;
 
     //constructor
-    public AccountCreatedPage(WebDriver rdriver){
+    public AccountCreatedPage(WebDriver rdriver) {
         ldriver = rdriver;
-        PageFactory.initElements(rdriver,this);
+        PageFactory.initElements(rdriver, this);
     }
 
     //identify webelements
@@ -22,13 +22,12 @@ public class AccountCreatedPage {
     WebElement continueButton;
 
 
-
     //identify action on webelement
-    public void verifyIfAccountCreated(){
+    public void verifyIfAccountCreated() {
         accountCreated.getText();
     }
 
-    public void clickOnContinueButton(){
+    public void clickOnContinueButton() {
         continueButton.click();
     }
 }

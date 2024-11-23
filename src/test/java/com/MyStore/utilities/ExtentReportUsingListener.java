@@ -1,4 +1,4 @@
-package com.SeleniumAutomation.utilities;
+package com.MyStore.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -10,13 +10,20 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ExtentReportUsingListener implements ITestListener {
     ExtentSparkReporter htmlReporter;
     ExtentReports reports;
     ExtentTest test;
 
     public void configureReport() {
-        htmlReporter = new ExtentSparkReporter("ExtentListenerReport.html");
+        ReadConfig readConfig = new ReadConfig();
+        String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
+        String reportName = "MyStoreT estReport-" + timestamp + ".html";
+        htmlReporter = new ExtentSparkReporter("D:\\Sakshi\\CareerLearnings\\SeleniumAutomation\\Reports\\" + reportName);
         reports = new ExtentReports();
         reports.attachReporter(htmlReporter);
 
@@ -31,20 +38,28 @@ public class ExtentReportUsingListener implements ITestListener {
         htmlReporter.config().setTheme(Theme.DARK);
     }
 
+    //onStart method is called when any test starts only once.
     public void onStart(ITestContext Result) {
         configureReport();
         System.out.println("On start method invoked...");
     }
 
+    //when all test methods are executed onFinish method starts running
     public void onFinsh(ITestContext Result) {
         System.out.println("On finish method invoked...");
-        reports.flush();
+        reports.flush(); //it is mandatory to call flush method to ensure info is written to the started reporter.
     }
 
     public void onTestFailure(ITestContext Result) {
         System.out.println("Name of the test method failed: " + Result.getName());
-        test = reports.createTest(Result.getName());
+        test = reports.createTest(Result.getName()); //create entry in html report
         test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed test case is: " + Result.getName(), ExtentColor.RED));
+        String screenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + Result.getName() + ".png";
+        File screenshotFile = new File(screenshotPath);
+        if (screenshotFile.exists()) {
+            test.fail("Captured screenshot is below:" + test.addScreenCaptureFromPath(screenshotPath));
+        }
+//        test.addScreenCaptureFromPath(screenshotPath);
     }
 
     public void onTestSkipped(ITestContext Result) {
@@ -60,7 +75,7 @@ public class ExtentReportUsingListener implements ITestListener {
 
     }
 
-    public void onTestFailedWithinSuccessPercentage(ITestContext Result){
+    public void onTestFailedWithinSuccessPercentage(ITestContext Result) {
 
     }
 }

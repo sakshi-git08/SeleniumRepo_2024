@@ -1,6 +1,6 @@
-package com.SeleniumAutomation.testcases;
+package com.MyStore.testcases;
 
-import com.SeleniumAutomation.pageobject.SignUpPage;
+import com.MyStore.pageobject.SignUpPage;
 import org.testng.annotations.Test;
 
 public class TestSignUpPage extends BaseTest {

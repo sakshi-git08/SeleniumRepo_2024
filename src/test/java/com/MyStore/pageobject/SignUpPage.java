@@ -1,4 +1,4 @@
-package com.SeleniumAutomation.pageobject;
+package com.MyStore.pageobject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -75,89 +75,84 @@ public class SignUpPage {
     }
 
 
-
     //identify action on webelement
-    public void selectTitle(){
+    public void selectTitle() {
         titleMrs.click();
     }
 
-    public void enterPassword(String pass){
+    public void enterPassword(String pass) {
         password.clear();
         password.sendKeys(pass);
     }
 
-    public void enterDay(String day){
+    public void enterDay(String day) {
         Select options = new Select(days);
         options.selectByVisibleText(day);
     }
 
-    public void enterMonth(String month){
+    public void enterMonth(String month) {
         Select options = new Select(months);
         options.selectByVisibleText(month);
     }
 
-    public void enterYear(String year){
+    public void enterYear(String year) {
         Select options = new Select(years);
         options.selectByVisibleText(year);
     }
 
-    public void enterFirstName(String fname){
+    public void enterFirstName(String fname) {
         firstName.clear();
         firstName.sendKeys(fname);
     }
 
-    public void enterLastName(String lname){
+    public void enterLastName(String lname) {
         lastName.clear();
         lastName.sendKeys(lname);
     }
 
-    public void enterCompanyName(String cmpy){
+    public void enterCompanyName(String cmpy) {
         company.clear();
         company.sendKeys(cmpy);
     }
 
-    public void enterAddressInField1(String add1){
+    public void enterAddressInField1(String add1) {
         addressField1.clear();
         addressField1.sendKeys(add1);
     }
 
-    public void enterAddressInField2(String add2){
+    public void enterAddressInField2(String add2) {
         addressField2.clear();
         addressField2.sendKeys(add2);
     }
 
-    public void enterCountry(String countryName){
+    public void enterCountry(String countryName) {
         Select options = new Select(country);
         options.selectByVisibleText(countryName);
     }
 
-    public void enterState(String stateName){
+    public void enterState(String stateName) {
         state.clear();
         state.sendKeys(stateName);
     }
 
-    public void enterCity(String cityName){
+    public void enterCity(String cityName) {
         city.clear();
         city.sendKeys(cityName);
     }
 
-    public void enterZipCode(String zipCode){
+    public void enterZipCode(String zipCode) {
         zipcode.clear();
         zipcode.sendKeys(zipCode);
     }
 
-    public void enterMobileNumber(String mobile){
+    public void enterMobileNumber(String mobile) {
         mobileNumber.clear();
         mobileNumber.sendKeys(mobile);
     }
 
-    public void clickOnCreateAccountButton(){
+    public void clickOnCreateAccountButton() {
         createAccountButton.click();
     }
-
-
-
-
 
 
 //    public void enterText(WebElement element, String text){

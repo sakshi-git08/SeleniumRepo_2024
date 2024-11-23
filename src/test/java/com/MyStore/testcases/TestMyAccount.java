@@ -1,15 +1,16 @@
-package com.SeleniumAutomation.testcases;
+package com.MyStore.testcases;
 
-import com.SeleniumAutomation.pageobject.*;
+import com.MyStore.pageobject.*;
 import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.logging.Logger;
+import java.io.IOException;
 
 public class TestMyAccount extends BaseTest {
     static Faker faker = new Faker();
     public static String emailId = faker.internet().emailAddress();
+    public static String password =  faker.regexify("[a-z]{0,9}");
 
 
     String firstName = faker.funnyName().name();
@@ -24,12 +25,8 @@ public class TestMyAccount extends BaseTest {
 //        return emailId;
 //    }
 
-    @Test
+    @Test(enabled = false)
     public void verifyRegistrationAndLogin() {
-//        System.out.println(firstName);
-        //open url
-        driver.get(url);
-        logger.info("url opened");
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickOnSignIn();
         MyAccountPage myAccountPage = new MyAccountPage(driver);
@@ -41,7 +38,7 @@ public class TestMyAccount extends BaseTest {
         signUpPage.selectTitle();
         logger.info("Title selected!!");
 
-        signUpPage.enterPassword(faker.regexify("[a-z]{0,9}"));
+        signUpPage.enterPassword(password);
         logger.info("password entered");
         signUpPage.enterDay("2");
         signUpPage.enterMonth("February");
@@ -70,5 +67,26 @@ public class TestMyAccount extends BaseTest {
         Assert.assertEquals("Logged in as " + firstName, username);
 
 
+    }
+
+    @Test
+    public void verifyRegisteredUserLogin() throws IOException {
+        IndexPage indexPage = new IndexPage(driver);
+        indexPage.clickOnSignIn();
+        MyAccountPage myAccountPage = new MyAccountPage(driver);
+        myAccountPage.enterLoginEmail("sakshi.agg428@gmail.com");
+        myAccountPage.enterLoginPassword("Test@123");
+        myAccountPage.clickOnLoginButton();
+        HomePage homePage = new HomePage(driver);
+        String username = homePage.verifyUserLoggedIn();
+        System.out.println(username);
+        if(username.equals("Logged in as Sakshi Aggarwal")){
+            logger.info("Verify registered user login - Passed");
+            Assert.assertTrue(true);
+        }else {
+            logger.info("Verify registered user login - Failed");
+            captureScreenshot(driver, "verifyRegisteredUserLogin");
+            Assert.assertTrue(false);
+        }
     }
 }

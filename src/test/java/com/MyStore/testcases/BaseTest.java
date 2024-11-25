@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,6 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        String browser = "chrome";
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -59,8 +59,13 @@ public class BaseTest {
     public void captureScreenshot(WebDriver driver, String testName) throws IOException {
         TakesScreenshot screenshot = ((TakesScreenshot) driver);
         File src = screenshot.getScreenshotAs(OutputType.FILE);
-        File dest = new File("D:\\Sakshi\\CareerLearnings\\SeleniumAutomation\\Screenshots\\" + testName + ".png");
+        File dest = new File(System.getProperty("user.dir")+"\\Screenshots\\" + testName + ".png");
         FileUtils.copyFile(src, dest);
+    }
+
+    public void scrollWindow(int x, int y){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(" + x + "," + y +")");
     }
 
     @AfterClass

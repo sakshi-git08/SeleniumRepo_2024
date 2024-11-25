@@ -7,7 +7,7 @@
     <test verbose="2" preserve-order="true"
           name="D:/Sakshi/CareerLearnings/SeleniumAutomation/src/test/java/com/SeleniumAutomation/testcases/TestMyAccount.java">
         <classes>
-            <class name="com.MyStore.testcases.TestMyAccount">
+            <class name="com.MyStore.testcases.TestProductPage">
 <!--                <methods>-->
 <!--                    <include name="verifyRegistrationAndLogin"/>-->
 <!--                </methods>-->

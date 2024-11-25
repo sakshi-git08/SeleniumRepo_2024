@@ -18,10 +18,17 @@ public class HomePage {
     @FindBy(xpath = "//*[@class='fa fa-user']//ancestor::a")
     WebElement loggedInAs;
 
+    @FindBy(xpath = "//a[@href='/logout']")
+    WebElement logoutLink;
+
     //identify action on webelement
     public String verifyUserLoggedIn() {
         String loggedInName = loggedInAs.getText();
         return loggedInName;
+    }
+
+    public void clickOnLogout(){
+        logoutLink.click();
     }
 
 }

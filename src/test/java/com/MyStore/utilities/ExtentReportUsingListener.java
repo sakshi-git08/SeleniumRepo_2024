@@ -23,13 +23,13 @@ public class ExtentReportUsingListener implements ITestListener {
         ReadConfig readConfig = new ReadConfig();
         String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
         String reportName = "MyStoreT estReport-" + timestamp + ".html";
-        htmlReporter = new ExtentSparkReporter("D:\\Sakshi\\CareerLearnings\\SeleniumAutomation\\Reports\\" + reportName);
+        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "//Reports//" + reportName);
         reports = new ExtentReports();
         reports.attachReporter(htmlReporter);
 
         //add system info/env info to reports
         reports.setSystemInfo("OS:", "Windows 11");
-        reports.setSystemInfo("browser:", "chrome");
+        reports.setSystemInfo("browser:", readConfig.getBrowser());
         reports.setSystemInfo("username:", "Sakshi Aggarwal");
 
         //configuration to change look and feel of report

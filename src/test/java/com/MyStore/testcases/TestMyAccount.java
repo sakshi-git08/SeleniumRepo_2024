@@ -25,7 +25,7 @@ public class TestMyAccount extends BaseTest {
 //        return emailId;
 //    }
 
-    @Test(enabled = false)
+    @Test
     public void verifyRegistrationAndLogin() {
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickOnSignIn();
@@ -74,8 +74,8 @@ public class TestMyAccount extends BaseTest {
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickOnSignIn();
         MyAccountPage myAccountPage = new MyAccountPage(driver);
-        myAccountPage.enterLoginEmail("sakshi.agg428@gmail.com");
-        myAccountPage.enterLoginPassword("Test@123");
+        myAccountPage.enterLoginEmail(email);
+        myAccountPage.enterLoginPassword(pass);
         myAccountPage.clickOnLoginButton();
         HomePage homePage = new HomePage(driver);
         String username = homePage.verifyUserLoggedIn();

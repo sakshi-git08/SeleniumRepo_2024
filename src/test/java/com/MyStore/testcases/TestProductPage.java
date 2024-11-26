@@ -1,7 +1,6 @@
 package com.MyStore.testcases;
 
 import com.MyStore.pageobject.*;
-import com.MyStore.utilities.AllDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,8 +10,8 @@ public class TestProductPage extends BaseTest {
     PaymentPage paymentPage;
     OrderDetailsPage orderDetailsPage;
 
-    @Test(dataProvider = "LoginDP", dataProviderClass = AllDataProvider.class)
-    public void verifyProduct(String userEmail, String userPwd, String expectedUserName) throws IOException {
+    @Test
+    public void verifyProduct() throws IOException {
         String searchKey = "T-Shirts";
         logger.info("\n *******************Test case search product Started******************");
 
@@ -20,13 +19,13 @@ public class TestProductPage extends BaseTest {
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickOnSignIn();
         MyAccountPage myAccountPage = new MyAccountPage(driver);
-        myAccountPage.enterLoginEmail(userEmail);
-        myAccountPage.enterLoginPassword(userPwd);
+        myAccountPage.enterLoginEmail(email);
+        myAccountPage.enterLoginPassword(pass);
         myAccountPage.clickOnLoginButton();
         HomePage homePage = new HomePage(driver);
         String username = homePage.verifyUserLoggedIn();
         System.out.println(username);
-        if (username.equals("Logged in as " + expectedUserName)) {
+        if (username.equals("Logged in as Sakshi Aggarwal")) {
             logger.info("Verify registered user login - Passed");
             Assert.assertTrue(true);
         } else {

@@ -22,6 +22,8 @@ public class BaseTest {
     ReadConfig readConfig = new ReadConfig();
     String url = readConfig.getBaseUrl();
     String browser = readConfig.getBrowser();
+    String email = readConfig.getEmail();
+    String pass = readConfig.getPassword();
 
     public static WebDriver driver;
     public static Logger logger;

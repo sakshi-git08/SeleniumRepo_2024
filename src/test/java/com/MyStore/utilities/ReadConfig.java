@@ -33,7 +33,25 @@ public class ReadConfig {
         if (value != null) {
             return value;
         } else {
-            throw new RuntimeException("url not specified in config file.");
+            throw new RuntimeException("browser not specified in config file.");
+        }
+    }
+
+    public String getEmail() {
+        String value = properties.getProperty("email");
+        if (value != null) {
+            return value;
+        } else {
+            throw new RuntimeException("email not specified in config file.");
+        }
+    }
+
+    public String getPassword() {
+        String value = properties.getProperty("password");
+        if (value != null) {
+            return value;
+        } else {
+            throw new RuntimeException("password not specified in config file.");
         }
     }
 }

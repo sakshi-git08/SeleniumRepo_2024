@@ -13,7 +13,7 @@ import java.io.IOException;
 public class TestMyAccountDataDrivenTesting extends BaseTest {
     static Faker faker = new Faker();
     public static String emailId = faker.internet().emailAddress();
-    public static String password =  faker.regexify("[a-z]{0,9}");
+    public static String password = faker.regexify("[a-z]{0,9}");
 
 
     String firstName = faker.funnyName().name();
@@ -83,10 +83,10 @@ public class TestMyAccountDataDrivenTesting extends BaseTest {
         HomePage homePage = new HomePage(driver);
         String username = homePage.verifyUserLoggedIn();
         System.out.println(username);
-        if(username.equals("Logged in as " + expectedUserName)){
+        if (username.equals("Logged in as " + expectedUserName)) {
             logger.info("Verify registered user login - Passed");
             Assert.assertTrue(true);
-        }else {
+        } else {
             logger.info("Verify registered user login - Failed");
             captureScreenshot(driver, "verifyRegisteredUserLogin");
             Assert.assertTrue(false);
@@ -94,19 +94,4 @@ public class TestMyAccountDataDrivenTesting extends BaseTest {
         homePage.clickOnLogout();
     }
 
-//    @DataProvider(name = "LoginDP")
-//    public String [][] LoginDP(){
-//        String fileName = System.getProperty("user.dir") + "\\testData\\MyStoreTestData.xlsx";
-//
-//        int ttlRows = ReadExcelFile.getRowCount(fileName, "LoginTestData");
-//        int ttlColumns = ReadExcelFile.getColCount(fileName, "LoginTestData");
-//
-//        String data[][] = new String[ttlRows - 1][ttlColumns];
-//        for (int i = 1; i < ttlRows; i++){
-//            for (int j = 0; j < ttlColumns; j++){
-//                data[i-1][j]=ReadExcelFile.getCellValue(fileName,"LoginTestData", i,j);
-//            }
-//        }
-//        return data;
-//    }
 }

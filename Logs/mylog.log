@@ -1,116 +1,20 @@
-[INFO ] 2024-11-25 11:28:13.338 [main] MyStore - url opened
-[INFO ] 2024-11-25 11:28:45.723 [main] MyStore - url opened
-[INFO ] 2024-11-25 11:30:06.496 [main] MyStore - url opened
-[INFO ] 2024-11-25 11:30:10.386 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 11:54:21.075 [main] MyStore - url opened
-[INFO ] 2024-11-25 11:55:10.235 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 14:06:37.987 [main] MyStore - url opened
-[INFO ] 2024-11-25 14:06:43.904 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 14:08:41.509 [main] MyStore - url opened
-[INFO ] 2024-11-25 14:08:51.387 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 14:53:33.647 [main] MyStore - url opened
-[INFO ] 2024-11-25 14:54:34.532 [main] MyStore - url opened
-[INFO ] 2024-11-25 14:56:10.218 [main] MyStore - url opened
-[INFO ] 2024-11-25 14:57:32.094 [main] MyStore - url opened
-[INFO ] 2024-11-25 14:57:34.270 [main] MyStore - 
+[INFO ] 2024-11-26 13:39:23.669 [main] MyStore - url opened
+[INFO ] 2024-11-26 13:39:24.330 [main] MyStore - 
  *******************Test case search product Started******************
-[INFO ] 2024-11-25 14:57:39.676 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 14:57:43.537 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 15:07:40.378 [main] MyStore - url opened
-[INFO ] 2024-11-25 15:07:42.798 [main] MyStore - 
+[INFO ] 2024-11-26 13:40:03.905 [main] MyStore - url opened
+[INFO ] 2024-11-26 13:40:05.673 [main] MyStore - 
  *******************Test case search product Started******************
-[INFO ] 2024-11-25 15:07:49.040 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 15:07:54.149 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 15:09:21.798 [main] MyStore - url opened
-[INFO ] 2024-11-25 15:09:23.609 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 15:09:32.184 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 15:09:36.928 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 15:10:14.689 [main] MyStore - url opened
-[INFO ] 2024-11-25 15:10:16.484 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 15:10:22.015 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 15:10:26.653 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 15:11:08.817 [main] MyStore - url opened
-[INFO ] 2024-11-25 15:11:10.772 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 15:11:18.650 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 15:11:24.419 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-25 15:13:55.678 [main] MyStore - url opened
-[INFO ] 2024-11-25 15:13:57.813 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 15:14:02.409 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 15:14:06.283 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 15:17:40.236 [main] MyStore - url opened
-[INFO ] 2024-11-25 15:17:42.817 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 15:17:50.153 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 15:17:54.268 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 16:36:20.050 [main] MyStore - url opened
-[INFO ] 2024-11-25 16:36:22.040 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 16:36:30.091 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 16:36:35.027 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 16:40:04.117 [main] MyStore - url opened
-[INFO ] 2024-11-25 16:40:06.475 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 16:40:14.877 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 16:41:53.713 [main] MyStore - Verify product - Failed
-[INFO ] 2024-11-25 16:51:40.030 [main] MyStore - url opened
-[INFO ] 2024-11-25 16:51:42.281 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 16:51:49.060 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 16:51:55.614 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-25 20:41:09.483 [main] MyStore - url opened
-[INFO ] 2024-11-25 20:41:11.429 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-25 20:41:17.448 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-25 20:41:24.443 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 12:40:59.404 [main] MyStore - url opened
-[INFO ] 2024-11-26 12:41:00.286 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 12:41:35.794 [main] MyStore - url opened
-[INFO ] 2024-11-26 12:41:36.330 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 12:41:40.039 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 12:41:44.521 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 12:43:34.069 [main] MyStore - url opened
-[INFO ] 2024-11-26 12:43:34.814 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 12:43:39.714 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 12:43:44.869 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 12:45:11.916 [main] MyStore - url opened
-[INFO ] 2024-11-26 12:45:12.430 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 12:45:15.912 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 12:45:20.672 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 12:46:52.947 [main] MyStore - url opened
-[INFO ] 2024-11-26 12:46:53.445 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 12:46:58.237 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 12:47:03.196 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 13:09:23.732 [main] MyStore - url opened
-[INFO ] 2024-11-26 13:09:24.434 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 13:09:27.967 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 13:09:32.519 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 13:10:53.635 [main] MyStore - url opened
-[INFO ] 2024-11-26 13:10:54.158 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 13:10:58.772 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 13:11:05.031 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 13:18:07.804 [main] MyStore - url opened
-[INFO ] 2024-11-26 13:18:08.955 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 13:18:12.553 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 13:18:17.319 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 13:20:19.811 [main] MyStore - url opened
-[INFO ] 2024-11-26 13:20:20.352 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 13:20:23.974 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 13:20:31.387 [main] MyStore - Verify product - Passed
-[INFO ] 2024-11-26 13:21:07.661 [main] MyStore - url opened
-[INFO ] 2024-11-26 13:21:08.187 [main] MyStore - 
- *******************Test case search product Started******************
-[INFO ] 2024-11-26 13:21:12.013 [main] MyStore - Verify registered user login - Passed
-[INFO ] 2024-11-26 13:21:16.329 [main] MyStore - Verify product - Passed
+[INFO ] 2024-11-26 13:40:13.377 [main] MyStore - Verify registered user login - Passed
+[INFO ] 2024-11-26 13:40:17.263 [main] MyStore - Enter product to search...
+[INFO ] 2024-11-26 13:40:19.100 [main] MyStore - Scroll the window and click on view product
+[INFO ] 2024-11-26 13:40:20.620 [main] MyStore - Verify the name of the product
+[INFO ] 2024-11-26 13:40:20.622 [main] MyStore - Verify product - Passed
+[INFO ] 2024-11-26 13:40:20.622 [main] MyStore - Enter the quantity of products
+[INFO ] 2024-11-26 13:40:20.905 [main] MyStore - Add product to the cart
+[INFO ] 2024-11-26 13:40:21.071 [main] MyStore - View cart details and checkout
+[INFO ] 2024-11-26 13:40:24.626 [main] MyStore - Click on place order
+[INFO ] 2024-11-26 13:40:26.148 [main] MyStore - Enter card details
+[INFO ] 2024-11-26 13:40:29.860 [main] MyStore - Review order which you placed...
+[INFO ] 2024-11-26 13:40:29.920 [main] MyStore - Download Invoice
+[INFO ] 2024-11-26 13:40:30.627 [main] MyStore - Click on continue
+[INFO ] 2024-11-26 13:40:32.998 [main] MyStore - After purchase => Logout

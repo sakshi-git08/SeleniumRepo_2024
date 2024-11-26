@@ -21,6 +21,9 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/logout']")
     WebElement logoutLink;
 
+    @FindBy(xpath = "//div[@class='row']/div/div/h2")
+    WebElement afterLogoutElement;
+
     //identify action on webelement
     public String verifyUserLoggedIn() {
         String loggedInName = loggedInAs.getText();
@@ -29,6 +32,11 @@ public class HomePage {
 
     public void clickOnLogout(){
         logoutLink.click();
+    }
+
+    public String verifyLogout(){
+        String text = afterLogoutElement.getText();
+        return text;
     }
 
 }

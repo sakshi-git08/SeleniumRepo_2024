@@ -82,6 +82,15 @@ public class TestProductPage extends BaseTest {
         orderDetailsPage.clickOnContinue();
         logger.info("After purchase => Logout");
         homePage.clickOnLogout();
+        String logoutText = homePage.verifyLogout();
+        if(logoutText.contains("Login to your account")){
+            logger.info("Verify logout - Passed");
+            Assert.assertTrue(true);
+        }else {
+            logger.info("Verify logout - Failed");
+            captureScreenshot(driver, "verifyProduct");
+            Assert.assertTrue(false);
+        }
     }
 
 }

@@ -1,0 +1,22 @@
+[INFO ] 2024-11-26 15:08:48.920 [main] MyStore - url opened
+[INFO ] 2024-11-26 15:08:56.032 [main] MyStore - Verify registered user login - Passed
+[INFO ] 2024-11-26 15:09:20.004 [main] MyStore - url opened
+[INFO ] 2024-11-26 15:09:29.699 [main] MyStore - Verify registered user login - Passed
+[INFO ] 2024-11-26 15:09:40.235 [main] MyStore - url opened
+[INFO ] 2024-11-26 15:09:40.235 [main] MyStore - 
+ *******************Test case search product Started******************
+[INFO ] 2024-11-26 15:09:46.590 [main] MyStore - Verify registered user login - Passed
+[INFO ] 2024-11-26 15:09:49.557 [main] MyStore - Enter product to search...
+[INFO ] 2024-11-26 15:09:51.890 [main] MyStore - Scroll the window and click on view product
+[INFO ] 2024-11-26 15:09:53.605 [main] MyStore - Verify the name of the product
+[INFO ] 2024-11-26 15:09:53.605 [main] MyStore - Verify product - Passed
+[INFO ] 2024-11-26 15:09:53.605 [main] MyStore - Enter the quantity of products
+[INFO ] 2024-11-26 15:09:53.884 [main] MyStore - Add product to the cart
+[INFO ] 2024-11-26 15:09:54.111 [main] MyStore - View cart details and checkout
+[INFO ] 2024-11-26 15:09:57.413 [main] MyStore - Click on place order
+[INFO ] 2024-11-26 15:09:58.977 [main] MyStore - Enter card details
+[INFO ] 2024-11-26 15:10:03.293 [main] MyStore - Review order which you placed...
+[INFO ] 2024-11-26 15:10:03.362 [main] MyStore - Download Invoice
+[INFO ] 2024-11-26 15:10:03.943 [main] MyStore - Click on continue
+[INFO ] 2024-11-26 15:10:06.551 [main] MyStore - After purchase => Logout
+[INFO ] 2024-11-26 15:10:08.559 [main] MyStore - Verify logout - Passed

@@ -2,7 +2,6 @@ package com.MyStore.testcases;
 
 import com.MyStore.pageobject.*;
 import com.MyStore.utilities.AllDataProvider;
-import com.MyStore.utilities.ReadExcelFile;
 import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
